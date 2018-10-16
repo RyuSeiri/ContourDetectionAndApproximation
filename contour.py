@@ -71,7 +71,6 @@ def drawing_edge(org_img, contours, cp_org_img_for_draw):
     # 輪郭線描画
     ######################################################
     min_area = 100
-    # min_area = 400
     large_contours = [
         cnt for cnt in contours if cv2.contourArea(cnt) > min_area]
 
